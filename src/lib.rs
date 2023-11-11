@@ -215,7 +215,6 @@ where
         Command::AllOn(false).send(&mut self.interface)?;
         Command::Invert(false).send(&mut self.interface)?;
         Command::EnableScroll(false).send(&mut self.interface)?;
-        Command::DisplayOn(true).send(&mut self.interface)?;
 
         self.addr_mode = mode;
 
